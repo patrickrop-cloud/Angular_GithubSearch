@@ -26,7 +26,17 @@ export class UserProfileComponent implements OnInit {
 
   }
 
-  ngOnInit():  {
+  ngOnInit(): void {
+  }
+
+  searchUser(){
+    this._githubHttpRequestService.updateUser(this.username);
+    this._githubHttpRequestService.getUser().subscribe(user =>{
+      this.user = user;
+    });
+    this._githubHttpRequestService.getRepos().subscribe(repos => {
+      this.repos = repos;
+        });
   }
 
 }
