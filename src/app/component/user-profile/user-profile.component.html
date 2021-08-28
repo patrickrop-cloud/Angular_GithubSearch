@@ -1,3 +1,24 @@
+<div class="container-boby">
+    <div class="row">
+      <div class="col-md-12">
+        <form class="form">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Enter your github name here." [(ngModel)]="username" name="username" (keyup)="searchUser()">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End of search bar area -->
+    
+    <div class="profile" *ngIf="user">
+      <div class="card">
+        <div class="card-heading">
+          <h3 class="card-title" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
+
+
+
+
+
 <!-- <body>
     <div class="container">
         <h2><strong>Github_Api_App</strong></h2>
