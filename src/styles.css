@@ -12,15 +12,16 @@ body {
 }
 
 .container {
-  max-width: 500px;
-  margin: 30px auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin: 30px ;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid rgb(82, 204, 147);
+  border: 1px solid rgb(94, 189, 144);
   padding: 30px;
-  border-radius: 5px;
+  border-radius: 50px;
 }
-.btn {
+/* .btn {
   display: inline-block;
   background: #000;
   color: #fff;
@@ -30,18 +31,16 @@ body {
   border-radius: 5px;
   font-size: 14px;
   font-family: inherit;
-}
-.btn:focus {
-  outline: none;
-}
+} */
+/* s */
 /* .btn:active {
   transform: scale(0.98);
 } */
 
-.btn-block {
+/* .btn-block {
   display: block;
   width: 100%;
-}
+} */
 
 .form-control {
   margin: 20px 0;

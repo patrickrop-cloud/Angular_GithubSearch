@@ -3,11 +3,51 @@
     margin: 0;
     padding: 0;
   }
-
+/* 
   h1{
       text-align: center;
       
   }
   p{
       text-align: center;
+  }
+   */
+
+   .jumbotron {
+    text-align: center;
+    background-color: greenyellow;
+    opacity: 1.0;
+    margin: 10px;
+    border-radius: 60px;
+  }
+
+h2 {
+    font-size: 50px;
+    font: outline;
+  }
+  
+  
+  
+  body {
+    background-image: url("/assets/blue.jpg");
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  p {
+    font-size: 8px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  .container{
+    opacity: 1.0;
+  }
+  .footer{
+      max-height: 100%;
+      border-radius: 60px;
+      margin: auto;
+    font-size: 20px;
+    color: rgb(236, 158, 12);
+    background-color: rgb(1, 12, 12);
   }
