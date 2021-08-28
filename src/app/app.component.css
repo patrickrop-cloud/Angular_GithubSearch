@@ -18,18 +18,17 @@
     background-color: greenyellow;
     opacity: 1.0;
     margin: 10px;
-    border-radius: 60px;
+    border-radius: 90px;
   }
 
 h2 {
-    font-size: 50px;
-    font: outline;
+    font-size: 38px;
   }
   
   
   
   body {
-    background-image: url("/assets/blue.jpg");
+    /* background-image: url("/assets/blue.jpg"); */
     background-position: center;
     background-attachment: fixed;
   }
@@ -43,11 +42,10 @@ h2 {
   .container{
     opacity: 1.0;
   }
-  .footer{
-      max-height: 100%;
-      border-radius: 60px;
+  #footer>p{
+      border-radius: 5px;
       margin: auto;
-    font-size: 20px;
+    font-size: 10px;
     color: rgb(236, 158, 12);
     background-color: rgb(1, 12, 12);
   }
