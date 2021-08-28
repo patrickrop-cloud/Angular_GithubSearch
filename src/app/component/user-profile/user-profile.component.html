@@ -1,9 +1,10 @@
 <div class="container-boby">
+    <!--Search bar area-->
     <div class="row">
       <div class="col-md-12">
         <form class="form">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter your github name here." [(ngModel)]="username" name="username" (keyup)="searchUser()">
+            <input type="text" class="form-control" placeholder="Enter github username..." [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
           </div>
         </form>
       </div>
@@ -13,22 +14,23 @@
     <div class="profile" *ngIf="user">
       <div class="card">
         <div class="card-heading">
-          <h2 class="card-title" style="font-size: 15px;"><strong>GitHub Name: {{user.name}}</strong></h2>
+          <h3 class="card-title" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
         
-          <div class="stats">
-            <p>{{user.bio}}</p>
-            <span class="label label-default">{{user.public_repos}} Public Repos</span>
-            <span class="label label-danger">{{user.company}}</span>
-            <span class="label label-danger">{{user.type}}</span> 
-            <span class="label label-success">{{user.followers}} Followers</span>
-            <span class="label label-info">{{user.following}} Following</span>
-          </div>   
-
+        <div class="stats">
+          <p>{{user.bio}}</p>
+          <span class="label label-default">{{user.public_repos}} Public Repos</span>
+          <span class="label label-success">{{user.followers}} Followers</span>
+          <span class="label label-info">{{user.following}} Following</span>
+          <span class="label label-danger">{{user.company}}</span>
+          <span class="label label-danger">{{user.type}}</span> 
         </div>
+        <br/>
+      </div>
         <div class="card-body">
           <div class="profilepic">
             
               <img class="img-thumbnail" src="{{user.avatar_url}}" width="250px" height="250px">
+    
               <div class="viewbtn">
                  <a class="btn btn-default btn-block btn-success" target="_blank" href="{{user.html_url}}">View Profile</a>
             </div>
@@ -36,22 +38,29 @@
           </div>
         </div>
       </div>
-
-
-
-
-
-<!-- <body>
-    <div class="container">
-        <h2><strong>Github_Api_App</strong></h2>
-    
+    <div class="container" style="padding: right 500px;">
+      <div class="card card-default">
+        <div class="card-heading">
+          <h3 class="card-title" style="text-align:center"><strong>User Repos</strong></h3>
+        </div>
+        <div class="card-body">
+          <div *ngFor="let repo of repos">
+            <div class="row" id="repo">
+              <div class="col-md-9">
+                <h4>
+                  <a target="_blank" href="{{repo.html_url}}">{{repo.name}}</a>
+                </h4>
+                <p>{{repo.description}}</p>
+              </div>
+              <div class="col-md-3">
+                <span class="label label-default">{{repo.watchers}} Watchers</span>
+                <span class="label label-primary">{{repo.forks}} Forks</span>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
     </div>
-    <app-user-profile></app-user-profile>
-    <div>
-        <footer>
-            <p>Created by Patrick Rop. © 2021</p>
-        </footer>
     </div>
-</body>
-
- -->
+    </div>
