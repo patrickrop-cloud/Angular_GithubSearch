@@ -3,7 +3,7 @@
       <div class="col-md-6">
         <form class="form">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter your github username" [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
+            <input type="text" class="form-control" placeholder="Enter your github username" [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:left">
           </div>
         </form>
       </div>
@@ -13,11 +13,11 @@
     <div class="profilepic" *ngIf="user">
       <div class="card">
         <div class="card-heading">
-          <h3 class="card-title" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>
+          <h2 class="card-title" style="font-size: 18px;"><strong>GitHub Name: {{user.name}}</strong></h2>
         
         <div class="stats">
           <p>{{user.bio}}</p>
-          <span class="label label-default">{{user.public_repos}} Public Repos</span>
+          <span class="label label-default">{{user.public_repos}} Public Repositories</span>
           <span class="label label-success">{{user.followers}} Followers</span>
           <span class="label label-info">{{user.following}} Following</span>
           <span class="label label-danger">{{user.company}}</span>
@@ -31,7 +31,7 @@
               <img class="img-thumbnail" src="{{user.avatar_url}}" width="250px" height="250px">
     
               <div class="viewbtn">
-                 <a class="btn btn-default btn-block btn-success" target="_blank" href="{{user.html_url}}">View Profile</a>
+                 <a class="btn btn-default btn-block btn-success" target="_blank" href="{{user.html_url}}">View User Profile</a>
             </div>
     
           </div>
@@ -40,7 +40,7 @@
     <div class="container" style="padding: right 500px;">
       <div class="card card-default">
         <div class="card-heading">
-          <h3 class="card-title" style="text-align:center"><strong>User Repos</strong></h3>
+          <h2 class="card-title" style="text-align:center" style="color:green"><strong>User Repositories</strong></h2>
         </div>
         <div class="card-body">
           <div *ngFor="let repo of repos">
