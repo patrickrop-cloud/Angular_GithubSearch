@@ -5,7 +5,9 @@
     text-align:justify;
     margin-top: 5px;
 }
-.containe-body{
+.container-body{
     border-radius: 50px;
-    
+    background-color: rgb(236, 243, 135);
+    opacity: 0.9;
+    background-image: url(../../../assets/img5.jpg);    
 }
