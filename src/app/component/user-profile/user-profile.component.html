@@ -1,17 +1,16 @@
-<div class="container-boby">
-    <!--Search bar area-->
+<div class="container-body">
     <div class="row">
       <div class="col-md-12">
         <form class="form">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter github username..." [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
+            <input type="text" class="form-control" placeholder="Enter your github username" [(ngModel)]="username" name="username" (keyup)="searchUser()" style="text-align:center">
           </div>
         </form>
       </div>
     </div>
     <!-- End of search bar area -->
     
-    <div class="profile" *ngIf="user">
+    <div class="profilepic" *ngIf="user">
       <div class="card">
         <div class="card-heading">
           <h3 class="card-title" style="font-size: 20px;"><strong>GitHub Name: {{user.name}}</strong></h3>

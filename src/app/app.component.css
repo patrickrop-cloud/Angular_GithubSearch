@@ -28,7 +28,7 @@ h2 {
   
   
   body {
-    /* background-image: url("/assets/blue.jpg"); */
+    /* background-color: darkgray; */
     background-position: center;
     background-attachment: fixed;
   }
@@ -43,8 +43,8 @@ h2 {
     opacity: 1.0;
   }
   #footer>p{
-      border-radius: 5px;
-      margin: auto;
+      border-radius: 10px;
+      /* margin: auto; */
     font-size: 10px;
     color: rgb(236, 158, 12);
     background-color: rgb(1, 12, 12);
