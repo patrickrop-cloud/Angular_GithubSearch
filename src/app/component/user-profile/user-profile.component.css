@@ -2,6 +2,10 @@
     color: black;
     font-weight: bold;
     opacity: 1.2;
-    text-align: left;
+    text-align:justify;
     margin-top: 5px;
+}
+.containe-body{
+    border-radius: 50px;
+    
 }
