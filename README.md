@@ -33,3 +33,8 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 Use git, github and any editor to see codes and the renderd front end.
 
+
+## License
+This Website uses MIT LICENSE. For more Read License.
+
+Copyright (c) 2021 Patrick Rop
